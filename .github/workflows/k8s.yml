@@ -47,6 +47,8 @@ jobs:
     
     - name: Get new container image tag
       id: image-tag
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       run: |
         echo "::set-output name=image::ghcr.io/uyarburak/2048:$GIT_TAG_NAME"
         
