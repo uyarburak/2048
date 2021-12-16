@@ -20,7 +20,7 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v4
         name: Build & push Docker image
         with:
-          image: mvkaran/2048
+          image: uyarburak/2048
           registry: ghcr.io
           dockerfile: Dockerfile
           username: ${{ github.actor }}
