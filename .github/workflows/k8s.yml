@@ -39,7 +39,7 @@ jobs:
       with:
         method: kubeconfig
         kubeconfig: ${{ secrets.KUBECONFIG }} 
-        context: github-demo 
+        context: default 
       id: setcontext
 
     - name: Get tag name
