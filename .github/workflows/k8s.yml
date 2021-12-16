@@ -58,6 +58,6 @@ jobs:
       uses: Azure/k8s-deploy@v1
       with:
         manifests: |
-          2048.yaml
+          k8s.yaml
         images: |
           ${{ steps.image-tag.outputs.image }}
