@@ -44,6 +44,8 @@ jobs:
 
     - name: Get tag name
       uses: olegtarasov/get-tag@v2
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     
     - name: Get new container image tag
       id: image-tag
