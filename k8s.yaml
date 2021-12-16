@@ -21,7 +21,7 @@ spec:
         spec:
             containers:
             - name: "2048-game"
-              image: ghcr.io/mvkaran/2048:v0.1.0
+              image: ghcr.io/uyarburak/2048:v0.1.0
               ports:
                 - containerPort: 80
 ---
